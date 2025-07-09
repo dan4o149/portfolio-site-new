@@ -135,19 +135,35 @@ footer {
   font-size: 14px;
 }
 
+/* ✅ Адаптив под мобильные устройства */
+
 @media (max-width: 768px) {
-  nav {
+  header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
   }
 
-  ul {
+  nav {
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   section {
     padding: 40px 15px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  input, textarea, button {
+    width: 100%;
   }
 }
