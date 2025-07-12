@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    // ✅ Исправленное регулярное выражение
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!emailRegex.test(email)) {
       alert("Пожалуйста, введите корректный email.");
       return;
