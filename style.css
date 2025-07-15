@@ -45,9 +45,10 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
+/* ✅ Подсветка активной ссылки */
 nav a:hover,
 nav a.active {
   color: #1da1f2;
@@ -148,6 +149,7 @@ footer {
   right: 20px;
 }
 
+/* ✅ Адаптив для мобильных */
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -183,7 +185,7 @@ footer {
   }
 }
 
-/* Анимация появления */
+/* ✅ Анимация появления */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
