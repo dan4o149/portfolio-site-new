@@ -48,8 +48,10 @@ nav a {
   transition: color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #1da1f2;
+  border-bottom: 2px solid #1da1f2;
 }
 
 h2 {
@@ -136,8 +138,6 @@ footer {
   font-size: 14px;
 }
 
-/* ===== Бургер-меню ===== */
-
 .burger {
   display: none;
   font-size: 28px;
@@ -181,4 +181,16 @@ footer {
   input, textarea, button {
     width: 100%;
   }
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
